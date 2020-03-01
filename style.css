@@ -3,7 +3,16 @@ html, body {
   padding: 0;
 }
 
+.button {
+  margin-top: 10px;
+}
+
 canvas {
   margin: auto;
   display: block;
+}
+
+footer {
+  margin-top: 48px;
+  padding-bottom: 0px;
 }

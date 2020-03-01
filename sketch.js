@@ -1,4 +1,4 @@
-const canvasSize = 500
+let canvasSize
 const noiseScale = 0.02
 
 let startPoint
@@ -6,7 +6,9 @@ let endPoint
 let graph = createGraph()
 
 function setup() {
-    createCanvas(canvasSize, canvasSize)
+    canvasSize = min(500, windowWidth)
+    let canvas = createCanvas(canvasSize, canvasSize)
+    canvas.parent("canvas")
     colorMode(HSB)
     noLoop()
 
