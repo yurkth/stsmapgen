@@ -2,51 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Procedural Map Generator</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
-    <script
-        src="https://cdn.jsdelivr.net/gh/kchapelier/poisson-disk-sampling@2.2.0/build/poisson-disk-sampling.min.js"></script>
-    <script src="https://unpkg.com/delaunator@4.0.1/delaunator.min.js"></script>
-    <script src="https://unpkg.com/ngraph.graph@19.0.0/dist/ngraph.graph.min.js"></script>
-    <script src="https://unpkg.com/ngraph.path@1.3.1/dist/ngraph.path.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Procedural Map Generator</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/gh/kchapelier/poisson-disk-sampling@2.2.0/build/poisson-disk-sampling.min.js"></script>
+  <script src="https://unpkg.com/delaunator@4.0.1/delaunator.min.js"></script>
+  <script src="https://unpkg.com/ngraph.graph@19.0.0/dist/ngraph.graph.min.js"></script>
+  <script src="https://unpkg.com/ngraph.path@1.3.1/dist/ngraph.path.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8" />
 </head>
 
 <body>
-    <section class="hero is-dark is-bold">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <h1 class="title is-2">Procedural Map Generator</h1>
-            </div>
-        </div>
-    </section>
+  <section class="hero is-dark is-bold">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-2">Procedural Map Generator</h1>
+      </div>
+    </div>
+  </section>
 
-    <section class="section">
-        <div class="container has-text-centered is-size-5">
-            <p>
-                The map generator inspired by
-                <a href="https://store.steampowered.com/app/646570">Slay the Spire</a>.
-            </p>
-            <a href="https://yurkth.github.io/stsmapgen/" class="button is-dark is-outlined  is-rounded">Refresh</a>
-            <a href="https://github.com/yurkth/stsmapgen" target="_blank"
-                class="button is-dark is-outlined  is-rounded">View GitHub</a>
-        </div>
-    </section>
+  <section class="section">
+    <div class="container has-text-centered is-size-5">
+      <p>
+        The map generator inspired by
+        <a href="https://store.steampowered.com/app/646570">Slay the Spire</a>.
+      </p>
+      <a href="https://yurkth.github.io/stsmapgen/" class="button is-dark is-outlined  is-rounded">Refresh</a>
+      <a href="https://github.com/yurkth/stsmapgen" target="_blank" class="button is-dark is-outlined  is-rounded">View
+        GitHub</a>
+    </div>
+  </section>
 
-    <div id="canvas"></div>
+  <div id="canvas"></div>
 
-    <footer class="hero is-dark">
-        <div class="hero-body has-text-centered">
-            <p class="has-text-grey-lighter">Copyright © 2020 torin All Rights Reserved.</p>
-        </div>
-    </footer>
+  <footer class="hero is-dark">
+    <div class="hero-body has-text-centered">
+      <p class="has-text-grey-lighter">Copyright © 2020 torin All Rights Reserved.</p>
+    </div>
+  </footer>
 
-    <script src="sketch.js"></script>
+  <script src="sketch.js"></script>
 </body>
 
 </html>
