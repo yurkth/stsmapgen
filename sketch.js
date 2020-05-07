@@ -51,7 +51,9 @@ function setup() {
 }
 
 function draw() {
-  paperEffect()
+  noStroke()
+  fill(40, 50, 60)
+  rect(0, 0, canvasSize, canvasSize)
   push()
   strokeWeight(10)
   stroke(40, 80, 20)
@@ -104,21 +106,9 @@ function draw() {
   }
   pop()
 
-  paperEffect(0.3)
-}
-
-function paperEffect(alpha = 1) {
-  // Perlin Noise
-  push()
-  noiseDetail(10)
-  for (let x = 0; x < width; x++) {
-    for (let y = 0; y < height; y++) {
-      const n = noise(x * noiseScale * 0.5, y * noiseScale)
-      stroke(40 - 5 * n, 50 - 10 * n, 60 + 10 * n, alpha)
-      point(x, y)
-    }
-  }
-  pop()
+  noStroke()
+  fill(40, 50, 60, 0.3)
+  rect(0, 0, canvasSize, canvasSize)
 }
 
 function arrow(x1, y1, x2, y2, arrowSize = 6) {
