@@ -6,7 +6,7 @@ The map generator inspired by [Slay the Spire](https://store.steampowered.com/ap
 
 ## Theory
 
-1. Set start point and end point.
+1. Set the start point and the end point.
 2. Prepare points with Poisson disk sampling.
 3. Generate links with Delaunay triangulation.
 4. Find the path from the start point to the end point with A*.
